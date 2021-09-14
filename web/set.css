@@ -1,0 +1,354 @@
+.comment {
+    color: Blue;
+}
+
+.results {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 90%;
+}
+
+.set_0 {
+    background-color: PaleVioletRed;
+}
+.set_1 {
+    background-color: SpringGreen;
+}
+.set_2 {
+    background-color: Aquamarine;
+}
+.set_3 {
+    background-color: Azure;
+}
+.set_4 {
+    background-color: Beige;
+}
+.set_5 {
+    background-color: Bisque;
+}
+.set_6 {
+    background-color: YellowGreen;
+}
+.set_7 {
+    background-color: Yellow;
+}
+.set_8 {
+    background-color: BlueViolet;
+}
+.set_9 {
+    background-color: Brown;
+}
+.set_10 {
+    background-color: BurlyWood;
+}
+.set_11 {
+    background-color: CadetBlue;
+}
+.set_12 {
+    background-color: Chartreuse;
+}
+.set_13 {
+    background-color: Chocolate;
+}
+.set_14 {
+    background-color: Coral;
+}
+.set_15 {
+    background-color: CornflowerBlue;
+}
+.set_16 {
+    background-color: Cornsilk;
+}
+.set_17 {
+    background-color: Crimson;
+}
+.set_18 {
+    background-color: Cyan;
+}
+.set_19 {
+    background-color: Turquoise;
+}
+.set_20 {
+    background-color: DarkGoldenRod;
+}
+.set_21 {
+    background-color: DarkGray;
+}
+.set_22 {
+    background-color: DarkGreen;
+}
+.set_23 {
+    background-color: DarkKhaki;
+}
+.set_24 {
+    background-color: DarkOliveGreen;
+}
+.set_25 {
+    background-color: Thistle;
+}
+.set_26 {
+    background-color: DarkSeaGreen;
+}
+.set_27 {
+    background-color: Violet;
+}
+.set_28 {
+    background-color: Teal;
+}
+.set_29 {
+    background-color: DarkTurquoise;
+}
+.set_30 {
+    background-color: DarkViolet;
+}
+.set_31 {
+    background-color: DeepPink;
+}
+.set_32 {
+    background-color: DeepSkyBlue;
+}
+.set_33 {
+    background-color: DimGray;
+}
+.set_34 {
+    background-color: DodgerBlue;
+}
+.set_35 {
+    background-color: FireBrick;
+}
+.set_36 {
+    background-color: Gainsboro;
+}
+.set_37 {
+    background-color: Gold;
+}
+.set_38 {
+    background-color: GoldenRod;
+}
+.set_39 {
+    background-color: Gray;
+}
+.set_40 {
+    background-color: Green;
+}
+.set_41 {
+    background-color: GreenYellow;
+}
+.set_42 {
+    background-color: HoneyDew;
+}
+.set_43 {
+    background-color: HotPink;
+}
+.set_44 {
+    background-color: IndianRed;
+}
+.set_45 {
+    background-color: Tomato;
+}
+.set_46 {
+    background-color: Ivory;
+}
+.set_47 {
+    background-color: Khaki;
+}
+.set_48 {
+    background-color: Lavender;
+}
+.set_49 {
+    background-color: LavenderBlush;
+}
+.set_50 {
+    background-color: LemonChiffon;
+}
+.set_51 {
+    background-color: LightBlue;
+}
+.set_52 {
+    background-color: LightCoral;
+}
+.set_53 {
+    background-color: SteelBlue;
+}
+.set_54 {
+    background-color: LightGray;
+}
+.set_55 {
+    background-color: LightGreen;
+}
+.set_56 {
+    background-color: LightSalmon;
+}
+.set_57 {
+    background-color: LightSeaGreen;
+}
+.set_58 {
+    background-color: LightSkyBlue;
+}
+.set_59 {
+    background-color: LightSteelBlue;
+}
+.set_60 {
+    background-color: LightYellow;
+}
+.set_61 {
+    background-color: Lime;
+}
+.set_62 {
+    background-color: LimeGreen;
+}
+.set_63 {
+    background-color: Linen;
+}
+.set_64 {
+    background-color: Magenta;
+}
+.set_65 {
+    background-color: Maroon;
+}
+.set_66 {
+    background-color: MediumAquaMarine;
+}
+.set_67 {
+    background-color: MediumOrchid;
+}
+.set_68 {
+    background-color: MediumPurple;
+}
+.set_69 {
+    background-color: MediumSeaGreen;
+}
+.set_70 {
+    background-color: MediumSlateBlue;
+}
+.set_71 {
+    background-color: MediumSpringGreen;
+}
+.set_72 {
+    background-color: MediumTurquoise;
+}
+.set_73 {
+    background-color: MediumVioletRed;
+}
+.set_74 {
+    background-color: MintCream;
+}
+.set_75 {
+    background-color: MistyRose;
+}
+.set_76 {
+    background-color: Moccasin;
+}
+.set_77 {
+    background-color: Navy;
+}
+.set_78 {
+    background-color: OldLace;
+}
+.set_79 {
+    background-color: Olive;
+}
+.set_80 {
+    background-color: OliveDrab;
+}
+.set_81 {
+    background-color: Orange;
+}
+.set_82 {
+    background-color: OrangeRed;
+}
+.set_83 {
+    background-color: Orchid;
+}
+.set_84 {
+    background-color: PaleGoldenRod;
+}
+.set_85 {
+    background-color: PaleGreen;
+}
+.set_86 {
+    background-color: PaleTurquoise;
+}
+.set_87 {
+    background-color: LightCyan;
+}
+.set_88 {
+    background-color: PapayaWhip;
+}
+.set_89 {
+    background-color: PeachPuff;
+}
+.set_90 {
+    background-color: Peru;
+}
+.set_91 {
+    background-color: Pink;
+}
+.set_92 {
+    background-color: Plum;
+}
+.set_93 {
+    background-color: PowderBlue;
+}
+.set_94 {
+    background-color: Purple;
+}
+.set_95 {
+    background-color: Red;
+}
+.set_96 {
+    background-color: RosyBrown;
+}
+.set_97 {
+    background-color: RoyalBlue;
+}
+.set_98 {
+    background-color: SaddleBrown;
+}
+.set_99 {
+    background-color: Salmon;
+}
+.set_100 {
+    background-color: SandyBrown;
+}
+.set_101 {
+    background-color: SeaGreen;
+}
+.set_102 {
+    background-color: SeaShell;
+}
+.set_103 {
+    background-color: Sienna;
+}
+.set_104 {
+    background-color: Silver;
+}
+.set_105 {
+    background-color: SlateGray;
+}
+.set_106 {
+    background-color: AliceBlue;
+}
+.set_107 {
+}
+
+.set_117 {
+    background-color: AntiqueWhite;
+}
+.set_118 {
+    background-color: FloralWhite;
+}
+.set_119 {
+    background-color: GhostWhite;
+}
+.set_120 {
+    background-color: NavajoWhite;
+}
+.set_121 {
+    background-color: White;
+}
+.set_122 {
+    background-color: WhiteSmoke;
+}
+.set_123 {
+    background-color: Snow;
+}

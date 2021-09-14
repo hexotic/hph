@@ -1,0 +1,42 @@
+# sam deploy --guided
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: An AWS Lambda application that calls the Lambda API.
+Resources:
+  MyApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      # CORS configuration - this is open for development only and should be restricted in prod.
+      CorsConfiguration:
+        AllowMethods:
+          - POST
+        AllowHeaders:
+          - "*"
+        AllowOrigins:
+          - "*"
+
+  HphFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: hph.lambda_handler
+      Runtime: python3.8
+      CodeUri: ../src
+      Description: Call the AWS Lambda API
+      MemorySize: 128
+      Timeout: 5
+      # Function's execution role
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AWSLambda_ReadOnlyAccess
+      Events:
+        HttpGet:
+          Type: HttpApi
+          Properties:
+            Path: '/hex'
+            Method: post
+            ApiId: !Ref MyApi
+
+Outputs:
+  APIendpoint:
+    Description: HTTP API endpoint URL.
+    Value: !Sub "https://${MyApi}.execute-api.${AWS::Region}.amazonaws.com/hex"
