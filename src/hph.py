@@ -60,7 +60,7 @@ def generate_html(string_list, filename='output.html'):
     html_doc = """<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="set.css">
+<link rel="stylesheet" type="text/css" href="./web/set.css">
 </head>
 <body>
 """
