@@ -5,6 +5,7 @@
 .results {
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 90%;
+    line-height: 1;
 }
 
 .set_0 {

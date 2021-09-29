@@ -3,9 +3,12 @@
     <head>
     <title>Hex pattern highlighter</title>
     <link rel="stylesheet" type="text/css" href="set.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script>
         function myFunction() {
-            document.getElementById("err").innerHTML = "";
+            var error = document.getElementById("err");
+            error.style.visibility = 'hidden';
+
             var hex_re = /^[0-9A-Fa-f\n]+$/;
             var data = document.getElementById("message").value;
             var lines = data.split('\n');
@@ -14,26 +17,28 @@
                 if (lines[i].charAt(0) != '#') {
                     var t = hex_re.test(lines[i]);
                     if (!t) {
-                        document.getElementById("err").innerHTML = "Error line :" + (i + 1) + " (not hex, not comment)";
+                        document.getElementById("err").innerHTML = "Error line " + (i + 1) + ": not hex, not comment";
                         err = true;
                         break;
+
                     }
                     if (lines[i].length % 2) {
-                        document.getElementById("err").innerHTML = "Error line: " + (i + 1) + " (length not even)";
+                        document.getElementById("err").innerHTML = "Error line " + (i + 1) + ": length not even";
                         err = true;
                         break;
                     }
                 }
             }
             if (err) {
+                error.style.visibility = 'visible';
                 return ;
             }
-
 
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("results").innerHTML = this.responseText;
+                    document.getElementById("results").innerHTML = this.responseText;
+                    document.getElementById("tabtwo").checked = true;
                 }
             };
             xhttp.open("POST", "__POST_URL__", true);
@@ -46,25 +51,36 @@
     <div align="center">
         <h1 style = "font-family:sans-serif">Hex Pattern Highlighter</h1>
     </div>
-    This is a pattern highlighter for hexdecimal data. <br>
-    It was originally designed to find common patterns between network packets.<br>
-    Put hexadecimal data to compare on different lines. <br>
-    Use # for comments.<br><br>
-    Data minimum size and pattern lookup size: 4 bytes (8 hex digit).<br>
 <br>
 
-<textarea id="message" rows="15" cols="60">
+<div class="tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">Input</label>
+  <div class="tab">
+    Put hexadecimal data to compare on different lines and use # for comments.<br>
+    Data minimum size and pattern lookup size: 4 bytes (8 hex digit).<br>
+  <div id="err" class="error">NO ERR</div>
+
+<textarea id="message" class="input">
 # Example
 00112233445566778899
 aabbcc11223344cafedeca
 cafedeca66778899</textarea>
-<div> <button onclick="myFunction()">Go !</button> </div>
+<div> <button class="buttongo" onclick="myFunction()">Go !</button> </div>
+  </div>
 
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">Results</label>
+  <div class="tab"><div id="results" class="results">No result yet.</div></div>
 
-<br>
-<br>
-<div id="err"> </div>
-<div id="results" class="results"> </div>
+  <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">About</label>
+    <div class="tab">
+    This is a pattern highlighter for hexdecimal data. <br>
+    It was originally designed to find common patterns between network packets.
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,82 @@
+/**
+ * Tabs
+ */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-right: 0.6rem;
+  cursor: pointer;
+  background: #90CAF9;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 25em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+body {
+  background: #eee;
+  box-sizing: border-box;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 200;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.buttongo {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  padding: 5px 10px;
+  border: none;
+  background: #90CAF9;
+  border: 2px solid #90CAF9;
+  border-radius: 4px;
+}
+.buttongo:hover {
+  background: white;
+}
+
+.error {
+  width: 80%;
+  color: red;
+  visibility: hidden;
+}
+
+.input {
+  outline: none;
+  border: none;
+  background: #e7f3fe;
+  width: 100%;
+  height: 10em;
+}
